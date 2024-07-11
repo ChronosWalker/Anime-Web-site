@@ -1,0 +1,225 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins",sans-serif;
+}
+
+.King{
+	width:100%;
+	min-height:100vh;
+	background-image: url("../images/invincible.png");
+	background-position: center;
+	background-size: cover;
+	padding: 10px 10%;
+	overflow: hidden;
+	position: relative;
+}
+
+nav{
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo{
+	width: 100%;
+	height: 200px;
+	margin-top: -29px;
+	margin-left: -48px;
+}
+
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 10px 6px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color:black;
+	font-weight: 900px;
+}
+
+.About_us{
+	text-decoration: none;
+	color: #333;
+	margin-right: 9px;
+	font-weight: 400;
+	padding: 16px 10px;
+	background-image: linear-gradient(45deg, #e85151,#e85151);
+	font-size: 14px;
+	border-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.Contact_us{
+	display: inline-block;
+	text-decoration: none;
+	padding: 16px 10px;
+	color: #333;
+	background-image: linear-gradient(45deg, #e85151,#e85151);
+	font-size: 14px;
+	border-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.Sample{
+	display: inline-block;
+	text-decoration: none;
+	padding: 16px 10px;
+	color: #333;
+	background-image: linear-gradient(45deg, #e85151,#e85151);
+	font-size: 14px;
+	border-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.content{
+	margin-top: 10%;
+	max-width: 600px;
+}
+
+.content h1{
+	font-size: 70px;
+	color: #222;
+}
+
+content p{
+	margin: 10px 30px;
+	color: #000000;
+}
+
+.content .info{
+	padding: 15px;
+	font-size: 16px;
+}
+
+.Contact_us:hover{
+	border-top-right-radius: 30px;
+}
+
+.About_us:hover{
+	border-top-right-radius: 30px;
+}
+
+.animation-img{
+	width: 120px;
+	position: absolute;
+	bottom: 0;
+	right: 10%;
+}
+
+.animation-img.anim{
+	animation-delay: 1.5s;
+}
+
+.anim{
+	opacity: 0;
+	transform: translateY(30px);
+	animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+	100%{
+		opacity:1;
+		transform: translateY(0px);
+	}
+}
+
+.contact{
+	min-height: 100vh;
+	background-image: linear-gradient(45deg, #e85151,#e85151);
+	border-radius: 20px;
+	border-top-right-radius: 20px;
+	padding: 50px;
+	text-align: center;
+}
+
+.contact_me{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.contact_me h2{
+	font-size: 36px;
+	margin-bottom: 40px;
+	color:#333;
+}
+
+.contact_wrapped{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 30px;
+}
+
+.contact_form{
+	text-align: left;
+}
+
+.contact_form h3{
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+.form_group{
+	margin-bottom: 20px;
+}
+
+input, textarea{
+	width: 100%;
+	padding: 12px;
+	border-radius: 8px;
+	border: none;
+	background-color: #f8f9fa;
+	color: #333;
+}
+
+input:focus,
+textarea:focus{
+	outline: none;
+	box-shadow: 0 0 8px #bbb;
+}
+
+button{
+	display: inline-block;
+	padding: 12px 24px;
+	background-image: linear-gradient(45deg, #e85151,#e85151);
+	border-radius: 20px;
+	border-top-right-radius: 20px;
+	cursor: pointer;
+}
+
+button:hover{
+	background-color: linear-gradient(45deg, #e85151,#e85151);
+}
+
+.contact_info{
+	text-align: left;
+}
+
+.contact_info h3{
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+.contact_info p{
+	margin-bottom: 10px;
+	color: #555;
+}
+
+.contact_info i{
+	margin-right: 10px;
+}
+
+@media screen and (max-width:768px) {
+	.contact_me{
+		padding: 20px;
+	}
+	.contact_wrapped{
+		grid-template-columns: 1fr;
+	}
+}

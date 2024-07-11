@@ -1,0 +1,152 @@
+*{
+	/* Définit une réinitialisation des marges, des rembourrages et de la boîte de modèle pour tous les éléments */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins",sans-serif;
+}
+
+.hero{
+	/* Définit la largeur à 100% et la hauteur minimale à 100% de la hauteur visible, avec une image de fond centrée et couvrant toute la zone */
+	width: 100%;
+	min-height: 100vh;
+	background-image: url("../images/invincible.png");
+	background-position: center;
+	background-size: cover;
+	padding: 10px 10%;
+	overflow: hidden;
+	position: relative;
+}
+
+nav{
+	/* Définit les styles de mise en page pour la barre de navigation */
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo{
+	/* Styles pour le logo dans la barre de navigation */
+	width: 100%;
+	height: 200px;
+	margin-top: -29px;
+	margin-left: -48px;
+}
+
+nav ul li{
+	/* Définit les styles pour les éléments de liste de la barre de navigation */
+	display: inline-block;
+	list-style: none;
+	margin: 10px 6px;
+}
+
+nav ul li a{
+	/* Définit les styles pour les liens de la barre de navigation */
+	text-decoration: none;
+	color: black;
+	font-weight: 900px;
+}
+
+.About_us{
+	/* Styles pour le lien "About us" avec un dégradé en arrière-plan */
+	text-decoration: none;
+	color: #333;
+	margin-right: 9px;
+	font-weight: 400;
+	padding: 16px 10px;
+	background-image: linear-gradient(45deg, #e85151, #e85151);
+	font-size: 14px;
+	border-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.Contact_us{
+	/* Styles pour le lien "Contact us" avec un dégradé en arrière-plan */
+	display: inline-block;
+	text-decoration: none;
+	padding: 16px 10px;
+	color: #333;
+	background-image: linear-gradient(45deg, #e85151, #e85151);
+	font-size: 14px;
+	border-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.Sample{
+	/* Styles pour le lien "Edits" avec un dégradé en arrière-plan */
+	display: inline-block;
+	text-decoration: none;
+	padding: 16px 10px;
+	color: #333;
+	background-image: linear-gradient(45deg, #e85151, #e85151);
+	font-size: 14px;
+	border-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.content{
+	/* Styles pour la section de contenu avec une marge supérieure et une largeur maximale */
+	margin-top: 10%;
+	max-width: 600px;
+}
+
+.content h1{
+	/* Styles pour le titre principal de la section de contenu */
+	font-size: 70px;
+	color: #222;
+}
+
+content p{
+	/* Styles pour les paragraphes dans la section de contenu */
+	margin: 10px 30px;
+	color: #000000;
+}
+
+.content .info{
+	/* Styles pour les informations supplémentaires dans la section de contenu */
+	padding: 15px;
+	font-size: 16px;
+}
+
+.Contact_us:hover{
+	/* Styles pour l'effet de survol du lien "Contact us" */
+	border-top-right-radius: 30px;
+}
+
+.About_us:hover{
+	/* Styles pour l'effet de survol du lien "About us" */
+	border-top-right-radius: 30px;
+}
+
+.animation-img{
+	/* Styles pour l'image animée en bas à droite */
+	width: 120px;
+	position: absolute;
+	bottom: 0;
+	right: 10%;
+}
+
+.animation-img.anim{
+	/* Animation différée pour l'image animée */
+	animation-delay: 1.5s;
+}
+
+.anim{
+	/* Styles et animation pour les éléments animés avec un effet de déplacement vers le haut */
+	opacity: 0;
+	transform: translateY(30px);
+	animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+	/* Animation pour l'effet de déplacement vers le haut */
+	100%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+.validation{
+	width: 50px;
+	margin-bottom: -95px;
+}
